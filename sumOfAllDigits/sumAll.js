@@ -1,12 +1,12 @@
 // Find the sum of digits of a number.
 
-// function sumAllDigits(num) {
-//   let str = num.toString();
-//   let arr = str.split("");
-//   return arr.reduce(function (acc, currVal) {
-//     acc + currVal;
-//   });
-// }
+function sumAllDigits(num) {
+  let arr = Array.from(String(num), Number);
+  return arr.reduce(function (acc, currVal) {
+    acc += currVal;
+    return acc;
+  });
+}
 
 // function sumAllDigits(num) {
 //   let str = num.toString();
@@ -18,12 +18,12 @@
 //   return eval(finalStr);
 // }
 
-function sumAllDigits(num) {
-  let str = num.toString();
-  let arr = str.split("");
-  let sumOfAllDigits = 0;
-  for (let i = 0; i < arr.length; i++) {
-    sumOfAllDigits += +arr[i];
-  }
-  return sumOfAllDigits;
-}
+// function sumAllDigits(num) {
+//   let str = num.toString();
+//   let arr = str.split("");
+//   let sumOfAllDigits = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     sumOfAllDigits += +arr[i];
+//   }
+//   return sumOfAllDigits;
+// }
