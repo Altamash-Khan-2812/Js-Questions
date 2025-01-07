@@ -12,13 +12,17 @@
 //   return Math.pow(num, power);
 // }
 
+// function powerOfNum(num, power) {
+//   let arr = [];
+//   for (let i = 0; i < power; i++) {
+//     arr.push(num);
+//   }
+//   return arr.reduce(function (acc, currVal) {
+//     acc *= currVal;
+//     return acc;
+//   });
+// }
+
 function powerOfNum(num, power) {
-  let arr = [];
-  for (let i = 0; i < power; i++) {
-    arr.push(num);
-  }
-  return arr.reduce(function (acc, currVal) {
-    acc *= currVal;
-    return acc;
-  });
+  return num ** power;
 }
