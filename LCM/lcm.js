@@ -1,4 +1,9 @@
-function getLcmOf(num1, num2) {}
+function getLcmOf(num1, num2) {
+  let product = num1 * num2;
+  let hcf = getHcfOf(num1, num2);
+
+  return product / hcf;
+}
 
 function getHcfOf(num1, num2) {
   let num1Factors = getFactors(num1);
